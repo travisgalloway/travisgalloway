@@ -1,0 +1,471 @@
+
+
+/* Colors */
+$white: rgba(255, 255, 255, 1);
+$ruby: rgba(163, 22, 33, 1);
+$snow: rgba(238, 238, 238, 1);
+$gray: rgba(206, 211, 220, 1);
+$cyan: rgba(78, 128, 152, 1);
+$blue: rgba(144, 194, 231, 1);
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+//
+// Cover
+//
+.cover-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    /* For at least Firefox */
+    min-height: 100%;
+    background: $white;
+}
+
+.cover-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+  background-image: url('/img/projects/cover.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto 80%;
+}
+
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+
+    h1, p {
+      padding: 1rem;
+      background: rgba(255,255,255,0.9);
+    }
+}
+
+.cover {
+    padding: 0 1.5rem;
+
+    .btn-lg {
+        padding: 0.75rem 1.25rem;
+        font-weight: bold;
+    }
+}
+
+.inner.cover {
+    // text-align: center;
+}
+
+//
+// Reused .inner
+//
+.inner {
+    padding: 2rem;
+    z-index: 1;
+    background: rgba(255,255,255,0.9);
+}
+@media (max-width: 48em) {
+    .inner {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+//
+// Header
+//
+.header-wrapper {
+    display: table;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,0.9);
+    z-index: 1;
+}
+
+.header-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.header-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.masthead {
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead {
+    .nav-item {
+      margin-left: 1rem;
+    }
+    .nav-link {
+        padding: 0.25rem 0;
+        font-weight: 500;
+        color: #888;
+        background-color: transparent;
+        border-bottom: 0.2rem solid transparent;
+
+        &:focus,
+        &:hover {
+            border-bottom-color: #888;
+        }
+
+    }
+
+    .active {
+        color: #000;
+        border-bottom-color: #000;
+    }
+}
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .nav-masthead {
+        float: right;
+    }
+}
+@media (max-width: 48em) {
+    .masthead-brand {
+        margin: 10, 0;
+    }
+
+    .masthead-brand {
+        text-align: center;
+    }
+
+    .nav-masthead {
+        justify-content: center;
+    }
+}
+
+//
+// Footer
+//
+.mastfoot {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+//
+// Header and cover alignment
+//
+.masthead {
+    position: fixed;
+    top: 0;
+}
+
+.mastfoot {
+    bottom: 0;
+}
+
+.cover-wrapper-inner,
+.header-wrapper-inner {
+    vertical-align: middle;
+}
+
+.cover-container,
+.header-container,
+.mastfoot,
+.masthead {
+    width: 100%;
+}
+@media (min-width: 62em) {
+    .cover-container,
+    .header-container,
+    .mastfoot,
+    .masthead {
+        width: 48rem;
+    }
+
+    .header-wrapper {
+        height: 4.2rem;
+    }
+
+    .inner {
+        background: none;
+    }
+}
+
+//
+// Content Common
+//
+
+.content-padding {
+  margin-bottom: 4rem;
+}
+
+.content-title {
+  text-align: center;
+}
+
+//
+// About
+//
+.about {
+  width: 100%;
+  padding: 6rem 0;
+  background: $blue;
+  background: linear-gradient(to bottom right, $blue, lighten($blue, 20%));
+
+  h1 {
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  h2 {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  p {
+    font-weight: lighter;
+  }
+
+  table {
+    font-weight: lighter;
+
+    th, td {
+      vertical-align: middle;
+    }
+
+    th {
+      font-weight: normal;
+    }
+  }
+
+  a {
+    color: #555;
+    font-weight: bold;
+
+    &:hover {
+      color: #111;
+    }
+  }
+
+  img {
+    max-height: 10rem;
+    margin-bottom: 2rem;
+  }
+}
+
+//
+// Services
+//
+.services {
+  width: 100%;
+  padding: 6rem 0;
+  background: $white;
+
+  h1, h2, p {
+    font-weight: 300;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .card-deck {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    margin: 1rem 0;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    i {
+      font-size: 3em;
+      text-align: center;
+      // -webkit-text-stroke: 1px white;
+
+      .fa {
+        font-size: 6em;
+      }
+    }
+
+    .icon-html5-alt {
+      color: #e55126;
+    }
+
+    .icon-css3-alt {
+      color: #0c73b8;
+    }
+
+    .icon-javascript-alt {
+      color: #e5a228;
+    }
+
+    .icon-ruby-on-rails {
+      color: #cc0000;
+    }
+
+    .icon-angular {
+      color: #dd0032;
+    }
+
+    .icon-mobile-device {
+      color: #28292d;
+    }
+
+    .icon-database-alt2 {
+      color: #0c73b8;
+    }
+
+    .icon-splatter {
+      color: #4f8f00;
+    }
+
+    ul {
+      margin-top: 0;
+      list-style-type: none;
+      font-weight: 300;
+    }
+
+    ul li:before {
+      content: '-';
+      position: absolute;
+      margin-left: -20px;
+    }
+
+  }
+}
+
+//
+// Projects
+//
+.projects {
+  width: 100%;
+  padding: 6rem 0;
+  background: $cyan;
+  background: linear-gradient(to bottom left, $cyan, lighten($cyan, 30%));
+  color: $white;
+
+  h1 {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    color: #000;
+    margin: 1rem 0;
+    background: $white;
+
+    .card-title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h5 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+
+      a {
+        color: $cyan;
+      }
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+}
+
+//
+// Testimonials
+//
+.testimonials {
+  width: 100%;
+  background: $white;
+  padding: 6rem 0;
+
+  h1, h2, p {
+    font-weight: 300;
+  }
+
+  h1 {
+      margin-bottom: 2rem;
+  }
+
+  blockquote {
+    margin: 1rem 0;
+  }
+}
+
+//
+// Contact
+//
+.contact {
+  width: 100%;
+  padding: 6rem 0;
+  background: $gray;
+  background: linear-gradient(to bottom right, $gray, lighten($gray, 30%));
+
+  h1, h2, p {
+    font-weight: 300;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    margin: 1rem;
+  }
+}
+
+//
+// Contact
+//
+.footer {
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+  background: $ruby;
+  background: linear-gradient(to bottom left, $ruby, lighten($ruby, 30%));
+  color: $white;
+
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 2rem;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  a {
+    color: $white;
+    margin: 0 2rem;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}

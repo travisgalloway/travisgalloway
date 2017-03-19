@@ -1,0 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Travis Galloway
+email: your-email@domain.com
+description: > # I’m Travis Galloway, a software engineer with experienced in design, development and implementation of small to large scale websites and web applications across multiple platforms and industries (education, advertising, retail and banking). As a full stack developer and consultant, I provide clients with the most effective technology solutions and strategies unique to their businesses.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://travisgalloway.com" # the base hostname & protocol for your site
+github_username:  travisgalloway
+twitter_username: travisegalloway
+linkedin_username: travis-galloway-22154a38
+
+# Build settings
+markdown: kramdown
+
+livereload: true
