@@ -1,5 +1,3 @@
-
-
 /* Colors */
 $white: rgba(255, 255, 255, 1);
 $ruby: rgba(163, 22, 33, 1);
@@ -16,6 +14,14 @@ html {
 body {
     height: 100%;
     position: relative;
+
+    // h1, h2, h3, h4, h5 {
+    //   font-family: 'Montserrat', sans-serif;
+    // }
+    //
+    // p, ul, table {
+    //   font-family: 'Hind', sans-serif;
+    // }
 }
 
 //
@@ -33,7 +39,7 @@ body {
 .cover-wrapper-inner {
   display: table-cell;
   vertical-align: top;
-  background-image: url('/img/projects/cover.png');
+  background-image: url('/img/projects/cover.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -251,7 +257,7 @@ body {
   }
 
   a {
-    color: #555;
+    color: $ruby;
     font-weight: bold;
 
     &:hover {
@@ -379,6 +385,10 @@ body {
       margin-right: auto;
     }
 
+    .card-footer {
+      background: $white;
+    }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
@@ -462,7 +472,6 @@ body {
 
   a {
     color: $white;
-    margin: 0 2rem;
 
     &:hover {
       color: #ccc;
