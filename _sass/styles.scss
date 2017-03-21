@@ -257,11 +257,11 @@ body {
   }
 
   a {
-    color: $ruby;
+    color: darken(#5E62B4, 10);
     font-weight: bold;
 
     &:hover {
-      color: #111;
+      color: #5E62B4;
     }
   }
 
